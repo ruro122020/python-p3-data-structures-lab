@@ -17,7 +17,7 @@ spicy_foods = [
 ]
 
 def get_names(spicy_foods):
-    pass
+    return [food_obj["name"] for food_obj in spicy_foods]
 
 def get_spiciest_foods(spicy_foods):
     pass
