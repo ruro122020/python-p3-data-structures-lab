@@ -32,10 +32,10 @@ def get_spicy_food_by_cuisine(spicy_foods, cuisine):
             return food_obj
     pass
 
-print(get_spicy_food_by_cuisine(spicy_foods, 'American'))
-
 def print_spiciest_foods(spicy_foods):
-    pass
+    for food_obj in spicy_foods:
+        if food_obj["heat_level"] > 5:
+            print(f"{food_obj['name']} ({food_obj['cuisine']}) | Heat Level: {'🌶' * food_obj['heat_level']}")
 
 def get_average_heat_level(spicy_foods):
     pass
